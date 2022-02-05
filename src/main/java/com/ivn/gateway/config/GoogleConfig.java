@@ -6,10 +6,15 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Profile;
 
-@Profile("google")
-@Configuration
+//@Profile("google")
+//@Configuration
 public class GoogleConfig {
 
+    /**
+     * Example
+     * @param builder
+     * @return
+     */
     @Bean
     public RouteLocator googleConfiguration(RouteLocatorBuilder builder) {
         return builder.routes()
